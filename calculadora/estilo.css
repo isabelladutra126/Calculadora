@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(to right, rgb(209, 188, 223), rgb(195, 131, 231));
+    
+}
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    border: solid;
+    border-width: 2px;
+    color: rgb(40, 2, 58);
+    background-color: rgb(155, 136, 179);
+    gap: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 5px;
+    border-radius: 5px;
+}
+#visor{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 210px;
+    border: solid;
+    
+}
+#visor p{
+    margin: 15px;
+    
+}
+#resultado{
+    font-family: cursive;
+    text-align: end;
+}
+#btndiff{
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+}
+#botoes{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 5px;
+    
+    
+}
+#c{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100px;
+}
+#btn2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100px;
+}
+.btncalc{
+    height: 50px;
+    width: 50px;
+
+
+}
+button{
+    background-color: rgb(34, 25, 39);
+    color: rgb(255, 255, 255);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    animation: asb 2s infinite;
+    font-family: cursive;
+  }
+@-webkit-keyframes asb {
+    0%   {color: rgb(255, 0, 0); margin-top: 50px; font-size: 20px;}
+    10%  {color: rgb(255, 145, 0);}
+    20%  {color: rgb(0, 255, 0);}
+    30%  {color: rgb(0, 255, 170);}
+    40%  {color: rgb(0, 119, 255); margin-top: 0px;}
+    50%  {color: rgb(204, 0, 255);}
+    60%  {color: rgb(119, 17, 133);}
+    70%  {color: rgb(255, 0, 55);}
+    80%  {color: rgb(59, 0, 87); font-size: 30px;}
+    90%  {color: rgb(23, 107, 155);} 
+    100% {color: rgb(214, 94, 184); margin-top: 50px;font-size: 0px;} 
+}

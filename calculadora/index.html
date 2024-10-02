@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h1>bem vindos a calculadora!!!!!!!!!!!</h1>
+    <div id="calculadora">
+        <div id="visor"><p id="resultado"></p></div>
+        <div id="btndiff">
+            <button onclick="limpar()" id="c">C</button>
+            <button onclick="apagar()" id="btn2"><</button>
+        </div>
+        
+        <div id="botoes">
+            <!--De cima pra baixo direita pra esquerda-->
+
+            <button onclick="insert('7')" class="btncalc">7</button>
+            <button onclick="insert('8')" class="btncalc">8</button>
+            <button onclick="insert('9')" class="btncalc">9</button>
+            <button onclick="insert('/')" class="btncalc">/</button>
+            <button onclick="insert('4')" class="btncalc">4</button>
+            <button onclick="insert('5')" class="btncalc">5</button>
+            <button onclick="insert('6')" class="btncalc">6</button>
+            <button onclick="insert('*')" class="btncalc">x</button>
+            <button onclick="insert('1')" class="btncalc">1</button>
+            <button onclick="insert('2')" class="btncalc">2</button>
+            <button onclick="insert('3')" class="btncalc">3</button>
+            <button onclick="insert('-')" class="btncalc">-</button>
+            <button onclick="insert('0')" class="btncalc">0</button>
+            <button onclick="insert('.')" class="btncalc">.</button>
+            <button onclick="calcular(7)" class="btncalc">=</button>
+            <button onclick="insert('+')" class="btncalc">+</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
